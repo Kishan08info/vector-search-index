@@ -1,0 +1,78 @@
+{
+  "corpus": {
+    "n_docs": 100000,
+    "dim": 128,
+    "n_topics": 50,
+    "n_queries": 200
+  },
+  "brute_force": {
+    "total_s": 1.0275002739999763,
+    "mean_ms_per_query": 2.471625365714577,
+    "p50_ms_per_query": 2.2322397100015223,
+    "p95_ms_per_query": 3.4543801060008255,
+    "topic_precision_at_5": 0.928,
+    "source_doc_in_top10": "150/150"
+  },
+  "ivf": {
+    "nlist": 64,
+    "train_time_s": 11.839495972999885,
+    "build_time_s": 0.18668523299993467
+  },
+  "results": [
+    {
+      "nprobe": 1,
+      "recall_at_10": 0.83,
+      "topic_precision_at_5": 0.984,
+      "mean_ms_per_query": 0.7850253764286208,
+      "p50_ms_per_query": 0.6159568399993987,
+      "p95_ms_per_query": 1.27910862949966,
+      "speedup_vs_brute_force": 3.6240196796965543,
+      "avg_docs_scanned": 1862.29,
+      "scan_fraction": 0.0186229
+    },
+    {
+      "nprobe": 4,
+      "recall_at_10": 0.965,
+      "topic_precision_at_5": 0.953,
+      "mean_ms_per_query": 1.0656078764282029,
+      "p50_ms_per_query": 1.0459526149998055,
+      "p95_ms_per_query": 1.3751943619990925,
+      "speedup_vs_brute_force": 2.134169060805816,
+      "avg_docs_scanned": 6502.935,
+      "scan_fraction": 0.06502935
+    },
+    {
+      "nprobe": 8,
+      "recall_at_10": 0.9845,
+      "topic_precision_at_5": 0.939,
+      "mean_ms_per_query": 1.4974116607140786,
+      "p50_ms_per_query": 1.4639937949982595,
+      "p95_ms_per_query": 2.1620093445003468,
+      "speedup_vs_brute_force": 1.5247603628020678,
+      "avg_docs_scanned": 12511.9,
+      "scan_fraction": 0.125119
+    },
+    {
+      "nprobe": 16,
+      "recall_at_10": 0.9945,
+      "topic_precision_at_5": 0.932,
+      "mean_ms_per_query": 1.8420292364281263,
+      "p50_ms_per_query": 1.8918808149987854,
+      "p95_ms_per_query": 2.043889910500866,
+      "speedup_vs_brute_force": 1.179905040689868,
+      "avg_docs_scanned": 24930.18,
+      "scan_fraction": 0.2493018
+    },
+    {
+      "nprobe": 32,
+      "recall_at_10": 0.9995,
+      "topic_precision_at_5": 0.928,
+      "mean_ms_per_query": 2.9113864821426563,
+      "p50_ms_per_query": 2.8389586000002964,
+      "p95_ms_per_query": 3.445729202000393,
+      "speedup_vs_brute_force": 0.7862882220266577,
+      "avg_docs_scanned": 49756.75,
+      "scan_fraction": 0.4975675
+    }
+  ]
+}
